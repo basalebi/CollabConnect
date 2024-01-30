@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 
 app.get("/", function (_, res) {
   console.log("home page");
-  res.sendFile(path.join(__dirname, "/src/index.js"));
+  res.sendFile(path.join(__dirname, "/src/app.js"));
 });
 
 app.use(express.static("src"));
